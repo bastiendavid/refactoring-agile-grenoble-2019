@@ -1,7 +1,7 @@
-package org.grenoble.parallelchange
+package org.grenoble.duplicate
 
 import org.assertj.core.api.Assertions.assertThat
-import org.grenoble.parallelchange.Dice.*
+import org.grenoble.duplicate.Dice.*
 import org.junit.jupiter.api.Test
 
 internal class DiceScoreCalculationTest {

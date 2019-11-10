@@ -1,4 +1,4 @@
-package org.grenoble.parallelchange
+package org.grenoble.duplicate
 
 class DiceScoreCalculation {
 
