@@ -8,11 +8,12 @@ class Board(private val rules: Rules, vararg players: Player) {
             return "Waiting for players"
         }
 
-        val rankedPlayers = players.sortedByDescending { rules.score(it.redChips, it.blueChips) }
-        return rankedPlayers.fold("Ranking:\n") { acc, player ->
-            "$acc${player.name} with ${rules.score(
-                player.redChips, player.blueChips
-            )} points\n"
-        }
+        return players
+            .sortedByDescending { rules.score(it.redChips, it.blueChips) }
+            .fold("Ranking:\n") { acc, player ->
+                "$acc${player.name} with ${rules.score(
+                    player.redChips, player.blueChips
+                )} points\n"
+            }
     }
 }
